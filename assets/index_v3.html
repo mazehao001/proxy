@@ -41,6 +41,13 @@
   <div class="box" id="list">
   </div>
   <script>
+      window.onload = function(){
+
+        var div = document.getElementById('img');
+
+        div.innerHTML = div.innerHTML.replace(/i.pximg.net/g,'pixiv.mazehao.workers.dev');
+
+    }
     const PAGE_CONF_SET = 110
     const PAGE_CONF_GET = 111
 
